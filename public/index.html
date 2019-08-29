@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Find Parrot</title>
     <link rel='stylesheet' href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>  
@@ -22,10 +22,9 @@
         <div class="nav-item">
             <a href="#">ABOUT US</a>
         </div>
-        <div class="nav-item">
+        <div class="nav-item nav-after">
             <a href="#">LOG IN</a>
         </div>
-        <div class="shape nav-item"></div>
         <div class="nav-item">
             <a href="#">SIGN UP</a>
         </div>
@@ -33,7 +32,7 @@
       </div>
       <div class="search-bar-menu">
         <div class="perfect-product">
-          <h1> 
+          <h1 class="quick"> 
             Quick Search for Your
             <span class="perfect"> Perfect Product </span>
           </h1>
@@ -42,18 +41,84 @@
           INNOVATE &#183; LIST &#183; CONNECT &#183;
         </div>
         <div class="search-bar">
-            <select name="select-bar" id="select-bar">
+            <select name="select-bar" id="select-bar" class="category-input-header">
               <option value="Category">Category</option>
             </select>
-            <input type="text" name="text-area">
-            <input type="submit" value="START SEARCHING">
+            <input type="text" name="text-area" class="input-area-header">    
+            <input type="submit" value="START SEARCHING" class="btn-submit-search-header">
         </div>
-      </div>
-      <div class="headers-bottom-menu">
-        <div class="categories"></div>
-        <div class="how-it-works categories"></div>
+        <div class="headers-bottom-menu">
+            <div class="categories">
+              <a href="#" class="categories">
+                <p class="text-headers-bottom button-before-all">All categories</p>
+              </a>
+            </div>
+            <div class="how-it-works">
+              <a href="#" class="how-it-works">
+                <p class="text-headers-bottom button-before-how">How it works?</p>
+              </a>
+            </div>
+          </div>
       </div>
     </header>
-  
+    <main>
+      <section class="most-popular-product-page">
+        <div class="page-name">
+        <h1 class="name-page">Most Popular Products</h1>
+        <p class="description-page">This is the list of products that are most interested in users</p>
+        </div>
+        <article class="container-products">
+          <content class="most-popular-products">
+          <div class="product-card">
+            <a href="#">
+              <img src="../img/hubstuf.png">
+              <p class="title-card">Hubstuff Directory</p>
+            </a>  
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="../img/jira.png">
+              <p class="title-card">Jira 2017</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="../img/slack.png">
+              <p class="title-card">Slack Pro</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="../img/trave.png">
+              <p class="title-card">TraveChat</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="../img/netw.png">
+              <p class="title-card">Network</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="../img/camp.png">
+              <p class="title-card">Time Camp</p>
+            </a>
+          </div>
+        </article>
+          <a href="#">
+            <div class="all-products">
+                All products
+            </div>
+          </a>
+        </content>
+      </section>
+      <section class="main-slider">
+        <div class="name-slider">
+          <h1 class="name-page-slider">Testimonials</h1>
+          <p class="description-page-slider">What our customers told about us</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
