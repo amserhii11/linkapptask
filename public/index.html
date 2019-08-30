@@ -6,6 +6,7 @@
     <title>Find Parrot</title>
     <link rel='stylesheet' href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700&display=swap" rel="stylesheet">
+    <script src="../src/index.js" type="text/javascript"></script>
   </head>
   <body>
     <header>  
@@ -31,6 +32,7 @@
         </nav>
       </div>
       <div class="search-bar-menu">
+      <div class="for-margin">
         <div class="perfect-product">
           <h1 class="quick"> 
             Quick Search for Your
@@ -38,30 +40,36 @@
           </h1>
         </div>
         <div class="innovate-list">
-          INNOVATE &#183; LIST &#183; CONNECT &#183;
+          INNOVATE &#8226; LIST &#8226; CONNECT
         </div>
         <div class="search-bar">
             <div class="select-style">
-              <select name="select-bar" id="select-bar" class="category-input-header">
-                <option value="Category">Category</option>
-            </select>
+              <button name="select-bar" id="button" class="category-input-header">
+                Category
+              </button>
+              <div class="dropdown">
+                  <div class="drop-links">Hubstaff</div>
+                  <div class="drop-links">Slack</div>
+                  <div class="drop-links">TraveChat</div>
+                </div>
             </div>
             <input type="text" name="text-area" class="input-area-header">    
             <input type="submit" value="START SEARCHING" class="btn-submit-search-header">
         </div>
       </div>
-      <div class="headers-bottom-menu">
-        <div class="categories-button">
-          <a href="#" class="categories">
-            <p class="text-headers-bottom button-before-all">All categories</p>
-          </a>
+        <div class="headers-bottom-menu">
+          <div class="categories-button">
+            <a href="#" class="categories">
+              <p class="text-headers-bottom button-before-all">All categories</p>
+            </a>
+          </div>
+          <div class="how-it-works-button">
+            <a href="#" class="how-it-works">
+              <p class="text-headers-bottom button-before-how">How it works?</p>
+            </a>
+          </div>
         </div>
-        <div class="how-it-works-button">
-          <a href="#" class="how-it-works">
-            <p class="text-headers-bottom button-before-how">How it works?</p>
-          </a>
         </div>
-      </div>
     </header>
     <main>
       <section class="most-popular-product-page">

@@ -1,8 +1,16 @@
-import React from 'react';
-import {render} from 'react-dom';
+window.addEventListener("load", () => onload());
 
-var Handler = React.createClass({
-  componentDidMount: function() {
-    document.title = "Amazing Page";
-  }
-});
+function onload() {
+	const button = document.getElementById("button");
+	const menu = document.getElementsByClassName("dropdown")[0];
+
+	button.onclick = function() {
+		if (menu.className === "dropdown open") {
+			menu.className = "dropdown";
+			button.className = "category-input-header";
+		} else {
+			menu.className += " open";
+			button.className += " open";
+		}
+	};
+}
